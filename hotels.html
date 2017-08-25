@@ -11,7 +11,7 @@
 				<a class="main-header-logo">
             		<img src="img/Logo-nav.jpg" alt="Логотип Седона" width="138" height="70">
 				</a>	
-            <!--размер изображения взят от балды-->
+            
             
                 <a href="#">Информация</a>
                 <a href="#">Фото и видео</a>
@@ -42,9 +42,16 @@
 				<input type="checkbox" name="apartments" id="apartments-checkbox">
 
 				<h2>Стоимость в сутки (р):</h2>
-				<label></label>
-				<input type="range" min="0" max="1000000">
-				<input type=submit value="НАЙТИ">		
+					<label>
+						<input type="text" value="от 0">
+					</label>
+					<label>
+						<input type="text" value="до 3000">	
+					</label>
+					<label>
+						<input type="range" min="0" max="10000" step="100">
+					</label>	
+				<input type=submit value="Показать">		
 			</form>	
 				<div class="search-sort">
 					<span class="found">Найдено:</span> <span>3</span>
