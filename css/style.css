@@ -1,24 +1,354 @@
 body {
-	font: 12px;
-	line-height: 1.5;
-	color: black;
-	font-style: normal;
-	font-family: sans-serif;
-}
+	margin: 0;
+	padding: 0;
 
-.reasons-header  {
-	font: 16px;
-	line-height: 2;
-	color: brown;
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
-}
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
 
- .interest {
+	background-color: #ffffff;
 	
-    font: 20px;
-	line-height: 2;
-	color: red;
+}
+
+.visually-hidden
+{
+	font-size: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav {
 	font-weight: bold;
-	font-family: "PT Sans", "Arial", serif;
+	
+}
+
+
+.main-nav a {
+	color: black;
+}
+
+.main-nav a:hover,
+.main-nav a:focus
+{
+	color: #81b3d2;
+}
+
+.main-nav a:visited
+{
+	color: black;
+}
+
+.main-header-logo
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reasons-top,
+.reasons-bottom,
+.features,
+.social-buttons ul
+
+{
+	list-style: none;
+}
+
+.reasons,
+.features
+
+{
+	text-align: center;
+}
+
+.intro
+{
+	background-color: #ffffff;
+}
+
+.intro-big 
+{
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.intro-small
+{
+	color: #333333;
+}
+
+.reasons-top 
+{
+	background-color: #81b3d2;
+	color: white;
+}
+
+.reasons-header 
+{
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+.features
+{
+	background-color: #ffffff;
+}
+
+.reasons-bottom 
+{
+	background-color: #eeeeee;
+	color: #333333;
+}
+
+.reasons-header-bottom
+
+{
+	font-size: 21px;
+	color: black;
+	font-weight: bold;
+}
+
+.features h3 
+{
+	font-size: 21px;
+	color: black;
+	font-weight: bold;
+}
+
+.features a {
+	color: black;
+}
+
+
+.features a:hover,
+.features a:focus
+{
+	color: #81b3d2;
+}
+
+.features a:visited
+{
+	color: black;
+}
+
+.features p
+{
+	color: #333333;
+}
+
+.interest
+{
+font-size: 30px;	
+}
+
+.map-section p
+
+{
+	color: #333333;
+}
+
+.map-section button
+{
+  font: inherit;	
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;	
+  padding-top: 30px;	
+  padding-bottom: 30px;
+  padding-left: 135px;
+  padding-right: 135px;
+	
+}
+
+.social-button
+{
+	text-align: center;
+	background-color: #81b3d2;
+	vertical-align: middle;
+}
+
+.twitter
+{
+	padding-top: 16px;
+	padding-bottom: 15px;
+	padding-left: 15px; 
+	padding-right: 15px;
+	margin: 3px;
+}
+
+.facebook
+{
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 18px; 
+	padding-right: 17px;
+	margin: 3px;
+}
+
+.youtube
+{
+	padding: 16px 13px 16px 13px;
+	margin: 3px;
+}
+
+.footer-copyright
+{
+	width: 120px;
+	height: 45px;
+	background-color: white;
+}
+
+
+
+/*страница поиска отелей*/
+
+
+.hotel-search-form
+{
+	background-image: url(../img/Hotels-background.jpg);
+	background-repeat:	no-repeat;
+}
+
+.button-show
+{
+	font: inherit;	
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+.button-show:hover,
+.button-show:focus
+{
+	background-color: white;
+	color: black;
+}
+
+.search-results
+{
+	list-style: none;
+}
+
+.sort
+{
+	font-size: 12px;
+}
+
+.sort-type a
+{
+	font-size: 12px;
+	color: #cacaca;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-type a:visited
+{
+	color: #cacaca;
+}
+
+.sort-type a:hover,
+.sort-type a:focus
+{
+	color: #81b3d2;
+}
+
+.sort-type a:active
+{
+	color: black;
+}
+
+.search-result-name
+{
+	color: black;
+	font-weight: bold;
+}
+
+.search-result-name:visited
+{
+	color: black;
+}
+
+.search-result-name:hover,
+.search-result-name:focus
+{
+	color: #81b3d2;
+}
+
+.search-result-name:active
+{
+	color: #cacaca;
+	
+}
+
+
+
+.details
+{
+	  font: inherit;	
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;	
+  padding-top: 8px;	
+  padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: none;	
+  
+}
+
+.book
+
+{
+
+	  font: inherit;	
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #766357;
+  border: none;	
+  padding-top: 8px;	
+  padding-bottom: 7px;
+  padding-left: 16px;
+  padding-right: 16px;
+	outline: none;
+}
+
+.details:hover,
+.details:focus
+{
+	background-color: #669ec0;
+}
+
+.details:active
+{
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.book:hover,
+.book:focus
+{
+	background-color: #604e43;
+}
+
+.book:active
+{
+	background-color: #503e33;
+	color: #8b827c;
 }
