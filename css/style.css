@@ -5,7 +5,7 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 700;
+	font-weight: normal;
 	color: #000000;
 	text-transform: uppercase;
 
@@ -15,21 +15,49 @@ body {
 
 .visually-hidden
 {
-	font-size: 0px;
+	display: none;
 }
 
 a {
   text-decoration: none;
 }
 
+
+.main-header-links {
+	width: 1200px;
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.main-header-links-1 
+{
+	width: 531px;
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.main-header-links-2 
+{
+	width: 531px;
+	height: 55px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 .main-nav {
 	font-weight: bold;
-	
+
 }
 
 
 .main-nav a {
 	color: black;
+	
 }
 
 .main-nav a:hover,
@@ -40,13 +68,38 @@ a {
 
 .main-nav a:visited
 {
-	color: black;
+	list-style: none;
 }
 
 .main-header-logo
 {
-	margin-left: auto;
-	margin-right: auto;
+	width: 138px;
+	margin: 0 auto;
+	vertical-align: top;
+	z-index: 1;
+	position: absolute;
+	
+	
+}
+
+.container
+{
+	width: 1200px;
+}
+
+.intro
+
+{
+	
+	z-index: -1;
+}
+
+.reasons-top,
+.features,
+.reasons-bottom
+{
+	margin: 0px;
+	padding: 0px;
 }
 
 .reasons-top,
@@ -94,9 +147,35 @@ a {
 	font-weight: bold;
 }
 
+.reason-1
+{
+	display: flex;
+	
+	width: 1200px;
+	height: 256px;
+}
+.reason-1-1
+{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding: 50px;
+}
+
 .features
 {
+	width: 1200px;
+	height: 330px;
+	padding-top: 60px;
 	background-color: #ffffff;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.features li
+{
+	width: 280px;
 }
 
 .reasons-bottom 
@@ -141,7 +220,52 @@ a {
 	color: #333333;
 }
 
+.reason-2
+{
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1200px;
+	height: 256px;
+}
+
+.reason-2-2
+{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding: 50px;
+}
+
+.reasons-bottom
+{
+	display: flex;
+	width: 1200px;
+	height: 256px;
+	padding-top: 50px;
+	justify-content: space-around;
+}
+
+.reasons-bottom li
+{
+	width: 280px;
+}
+
 .interest
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.interest p
+{
+	width: 450px;
+	text-align: center;
+	padding-bottom: 35px;
+}
+
+.interestheader
 {
 font-size: 30px;	
 }
@@ -154,7 +278,11 @@ font-size: 30px;
 
 .map-section button
 {
-  font: inherit;	
+	box-sizing: border-box;
+	width: 568px;
+  font: inherit;
+	font-size: 21px;
+	font-weight: bold;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -165,6 +293,66 @@ font-size: 30px;
   padding-bottom: 30px;
   padding-left: 135px;
   padding-right: 135px;
+	
+}
+
+.interactive-map
+{
+	width: 1200px;
+	height: 593px;
+	background: url(../img/map.jpg) no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	vertical-align: top;
+}
+
+.hotel-search
+{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	width:  568px;
+	height: 400px;
+	background-color: white;
+	padding: 55px 50px 60px 50px; 
+}
+
+.button-find
+{
+	box-sizing: border-box;
+	width: 460px;
+	height: 60px;
+  font: inherit;
+	font-size: 21px;
+	font-weight: bold;
+ 
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+	text-align: center;	
+  background-color: #81b3d2;
+  border: none;	
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+.main-footer
+{
+	width: 1200px;
+	height: 120px;
+	display: flex;
+	justify-content: space-around;
+	
+	
+	
+}
+
+.social-buttons
+{
+	display: flex;
+	width: 150px;
+	height: 50px;
 	
 }
 
@@ -208,13 +396,63 @@ font-size: 30px;
 
 
 
+
+
 /*страница поиска отелей*/
 
 
 .hotel-search-form
 {
+	box-sizing: border-box;
+	width: 1200px;
+	height: 215px;
 	background-image: url(../img/Hotels-background.jpg);
 	background-repeat:	no-repeat;
+	position: relative;
+	top: -15px;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+}
+
+.infrastructure
+{
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+}
+
+.housing-type
+{
+	display: flex;
+	flex-direction: column;
+	width: 240px;
+	position: relative;
+	right: 60px;
+}
+
+.cost-per-day
+{
+	display: flex;
+	flex-direction: column;
+	width: 330px;
+	position: relative;
+	
+}
+
+.slider-text
+{
+	display: flex;
+}
+
+.slider-text input
+{
+	width: 140px;
+}
+
+.slider
+{
+	
 }
 
 .button-show
@@ -227,6 +465,10 @@ font-size: 30px;
   background-color: rgba(255,255,255,0);
 	border: 2px solid white;
 	border-radius: 2px;
+	width: 140px;
+	height: 35px;
+	position: relative;
+	left: 80px;
 }
 
 .button-show:hover,
@@ -236,14 +478,58 @@ font-size: 30px;
 	color: black;
 }
 
+.search-sort 
+{
+height: 86px;
+padding-left: 6%;	
+	
+}
+
+.found
+{
+	font-size: 21px;
+	font-weight: bold;
+}
+
+
 .search-results
 {
 	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.search-results li
+{
+	margin-left: 6%;
+}
+
+.search-result-1,
+.search-result-2,
+.search-result-3
+{
+	display: flex;
+}
+
+.result-1-1,
+.result-2-1,
+.result-3-1
+{
+	display: flex;
+	flex-direction: column;
+	width: 260px;
+	margin-left: 30px;
+}
+
+.raiting
+{
+  padding-left: 525px;
 }
 
 .sort
 {
 	font-size: 12px;
+	padding-left: 40px;
 }
 
 .sort-type a
@@ -269,44 +555,55 @@ font-size: 30px;
 	color: black;
 }
 
-.search-result-name
+.search-result-1 img,
+.search-result-2 img
+{
+	margin-bottom: 60px;
+}
+
+.search-results-name
 {
 	color: black;
 	font-weight: bold;
 }
 
-.search-result-name:visited
+.search-results-name:visited
 {
-	color: black;
+	list-style: none;
 }
 
-.search-result-name:hover,
-.search-result-name:focus
+.search-results-name:hover,
+.search-results-name:focus
 {
 	color: #81b3d2;
 }
 
-.search-result-name:active
+.search-results-name:active
 {
 	color: #cacaca;
 	
 }
 
+.buttons
+{
+	margin-top: 15px;
+}
 
 
 .details
 {
-	  font: inherit;	
+	  font: inherit;
+	font-size: 14px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;	
-  padding-top: 8px;	
-  padding-bottom: 7px;
-  padding-left: 16px;
-  padding-right: 16px;
+  box-sizing: border-box;
+	width: 110px;
+	height: 27px;
+	
   outline: none;	
   
 }
@@ -316,16 +613,16 @@ font-size: 30px;
 {
 
 	  font: inherit;	
+	font-size: 14px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
   background-color: #766357;
   border: none;	
-  padding-top: 8px;	
-  padding-bottom: 7px;
-  padding-left: 16px;
-  padding-right: 16px;
+box-sizing: border-box;
+	width: 142px;
+	height: 27px;
 	outline: none;
 }
 
