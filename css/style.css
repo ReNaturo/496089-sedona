@@ -275,7 +275,8 @@ a {
 
 .interestheader
 {
-font-size: 30px;	
+font-size: 30px;
+line-height: 36px;	
 }
 
 .map-section p
@@ -313,6 +314,7 @@ font-size: 30px;
 	flex-direction: column;
 	align-items: center;
 	vertical-align: top;
+	z-index: -1;
 }
 
 .hotel-search
@@ -324,6 +326,18 @@ font-size: 30px;
 	height: 400px;
 	background-color: white;
 	padding: 55px 50px 60px 50px; 
+	justify-content: space-between;
+	font-weight: bold;
+}
+
+.hotel-search input{
+	font: inherit;
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	border: none;
+	margin-right: 15px;
+	
+	
 }
 
 .button-find
@@ -347,11 +361,13 @@ font-size: 30px;
 
 .main-footer
 {
+	
+	
 	width: 1200px;
 	height: 120px;
 	display: flex;
 	justify-content: space-around;
-	
+	background-color: rgba(255, 255, 255, 0.9);
 	
 	
 }
@@ -369,6 +385,16 @@ font-size: 30px;
 	text-align: center;
 	background-color: #81b3d2;
 	vertical-align: middle;
+}
+
+.social-button:hover
+{
+	background-color: #669ec0;
+}
+
+.social-button:active
+{
+	background-color: #5496bd;
 }
 
 .twitter
@@ -402,11 +428,16 @@ font-size: 30px;
 	background-color: white;
 }
 
+.academy-logo:hover
+{
+	fill: #81b3d2;
+}
 
 
 
 
-/*страница поиска отелей*/
+
+/*страница поиска отелей---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 .hotel-search-form
@@ -425,9 +456,12 @@ font-size: 30px;
 
 .infrastructure
 {
+	
 	display: flex;
 	flex-direction: column;
 	width: 240px;
+	height: 215px;
+	justify-content: space-around;
 }
 
 .housing-type
@@ -435,33 +469,180 @@ font-size: 30px;
 	display: flex;
 	flex-direction: column;
 	width: 240px;
+	height: 215px;
 	position: relative;
 	right: 60px;
+	justify-content: space-around;
 }
 
-.cost-per-day
+.infrastructure label,
+.housing-type label
+
 {
-	display: flex;
-	flex-direction: column;
-	width: 330px;
+	padding-left: 20px;
+		
 	position: relative;
+	top: -20px;
+	right: -10px;
+}
+
+.infrastructure input,
+.housing-type input
+
+{
+	position: relative;
+	top: -50px;
 	
 }
 
-.slider-text
+
+
+
+
+
+.infrastructure input,
+.housing-type input
 {
-	display: flex;
+	display: none;
 }
 
-.slider-text input
+.infrastructure label:before,
+.housing-type label:before
 {
-	width: 140px;
-}
-
-.slider
-{
+	content: "";
+	background: url(../img/checkbox-off.png) left bottom no-repeat;
+	width: 27px;
+	height: 23px;
+	display: block;
+	position: absolute;
+	left: -10px;
+	top: 0;
 	
 }
+
+input:checked + .box:before
+{
+	background-image: url(../img/checkbox-on.png);
+}
+
+.filter-header
+{
+	margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.slider-text 
+{
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.slider-text::after 
+{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.slider-text label 
+{
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.slider-text .min-price,
+.slider-text .max-price 
+{
+  width: 90px;
+  padding-left: 65px;
+}
+
+.slider-text input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+	outline: none;
+}
+
+.range-controls 
+{
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale 
+{
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar 
+{
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle 
+{
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover 
+{
+  background: #1c4f80;
+}
+
+.range-toggle-min
+{
+  left: 0;
+}
+
+.range-toggle-max 
+{
+  left: 80%;
+}
+
 
 .button-show
 {
@@ -505,11 +686,16 @@ padding-left: 6%;
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	
+	
 }
 
 .search-results li
 {
-	margin-left: 6%;
+	padding-left: 6%;
+	
+
+	
 }
 
 .search-result-1,
@@ -517,6 +703,8 @@ padding-left: 6%;
 .search-result-3
 {
 	display: flex;
+	
+	
 }
 
 .result-1-1,
@@ -532,6 +720,7 @@ padding-left: 6%;
 .raiting
 {
   padding-left: 525px;
+	padding-top: 
 }
 
 .sort
@@ -575,10 +764,7 @@ padding-left: 6%;
 	font-weight: bold;
 }
 
-.search-results-name:visited
-{
-	list-style: none;
-}
+
 
 .search-results-name:hover,
 .search-results-name:focus
@@ -590,6 +776,11 @@ padding-left: 6%;
 {
 	color: #cacaca;
 	
+}
+
+.search-results-name:visited
+{
+	list-style: none;
 }
 
 .buttons
